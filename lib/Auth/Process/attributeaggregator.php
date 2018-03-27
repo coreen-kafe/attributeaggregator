@@ -141,7 +141,7 @@ class sspmod_attributeaggregator_Auth_Process_attributeaggregator extends Simple
         if (isset($config['entityId'])) {
             $this->entityId = $config['entityId'];
 
-	    try {
+        try {
                 $this->aaMetadata = SimpleSAML_Configuration::loadFromArray(
                     $metadata->getMetaData($this->entityId, 'saml20-idp-remote')
                 );
